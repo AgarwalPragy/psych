@@ -50,9 +50,12 @@ public class PopulateDB {
         playerRepository.deleteAll();
         Player luffy = new Player();
         luffy.setName("Monkey D. Luffy");
+        luffy.setPicURL("https://i.imgur.com/PrCEBd7.png");
+        luffy.setPsychFaceURL("https://i.imgur.com/SPzynwl.png");
         Player robin = new Player();
         robin.setName("Nico Robin");
-
+        robin.setPicURL("https://i.imgur.com/kB7StJm.png");
+        robin.setPicURL("https://i.imgur.com/tnJTeaG.png");
         playerRepository.save(luffy);
         playerRepository.save(robin);
     }
