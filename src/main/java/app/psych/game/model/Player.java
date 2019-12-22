@@ -37,5 +37,4 @@ public class Player extends Auditable {
     @Getter
     @Setter
     private List<Game> games;
-
 }
