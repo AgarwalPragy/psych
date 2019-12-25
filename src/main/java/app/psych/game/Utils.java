@@ -11,7 +11,7 @@ public class Utils {
 
         String question, answer;
         List<Pair<String, String>> question_answers = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader("qa_facts.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
             do {
                 question = br.readLine();
                 answer = br.readLine();
