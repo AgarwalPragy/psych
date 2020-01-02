@@ -18,6 +18,10 @@ public class Game extends Auditable {
 
     @Getter
     @Setter
+    private boolean hasEllen = false;
+
+    @Getter
+    @Setter
     private int currentRound = 0;
 
     @ManyToMany

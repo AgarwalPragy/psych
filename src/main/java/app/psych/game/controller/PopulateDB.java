@@ -55,7 +55,7 @@ public class PopulateDB {
         Player robin = new Player();
         robin.setName("Nico Robin");
         robin.setPicURL("https://i.imgur.com/kB7StJm.png");
-        robin.setPicURL("https://i.imgur.com/tnJTeaG.png");
+        robin.setPsychFaceURL("https://i.imgur.com/tnJTeaG.png");
         playerRepository.save(luffy);
         playerRepository.save(robin);
     }
