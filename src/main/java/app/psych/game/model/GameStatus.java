@@ -2,6 +2,8 @@ package app.psych.game.model;
 
 public enum GameStatus {
     JOINING,
-    IN_PROGRESS,
+    SUBMITTING_ANSWERS,
+    SELECTING_ANSWERS,
+    GETTING_READY,
     OVER
 }

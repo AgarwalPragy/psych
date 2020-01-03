@@ -1,5 +1,7 @@
 package app.psych.game;
 
+import app.psych.game.model.Question;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -63,5 +65,8 @@ public class Utils {
             gameId = gameId * base + index;
         }
         return gameId;
+    }
+
+    public static Question getRandomQuestion() {
     }
 }

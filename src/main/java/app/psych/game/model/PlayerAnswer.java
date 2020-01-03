@@ -1,7 +1,9 @@
 package app.psych.game.model;
 
 import app.psych.game.Constants;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.Setter;
 
 import javax.persistence.Column;
@@ -20,11 +22,22 @@ public class PlayerAnswer extends Auditable {
     private String answer;
 
     @Getter
+    @JsonBackReference
     @Setter
+    @NonNull
     private Round round;
 
     @Getter
     @Setter
     @NotNull
     private Player player;
+
+    public PlayerAnswer() {
+    }
+
+    public PlayerAnswer(@NotBlank String answer, @NonNull Round round, @NotNull Player player) {
+        this.answer = answer;
+        this.round = round;
+        this.player = player;
+    }
 }

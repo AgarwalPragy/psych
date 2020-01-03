@@ -22,7 +22,7 @@ public class GameController {
     }
 
     @GetMapping("/games/{id}")
-    public List<Game> getAllGames(@PathVariable(value = "id") Long id) {
-        return gameRepository.findAll();
+    public Game getGame(@PathVariable(value = "id") Long id) {
+        return gameRepository.findById(id).orElseThrow();
     }
 }
